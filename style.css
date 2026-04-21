@@ -1,0 +1,384 @@
+/* GERAL */
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif, Arial;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: white;
+    padding: 10px 0;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+header a:hover { color: #ad9966; }
+
+#logo img { width: 70px; }
+
+#sec01 {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("header-bg.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay { text-align: center; color: white; }
+
+.overlay h1 {
+    font-size: 72px;
+    letter-spacing: 10px;
+    margin: 0;
+}
+
+.linha {
+    width: 200px;
+    height: 1px;
+    background: white;
+    margin: 20px auto;
+}
+
+.menu-section { padding: 100px 0; background-color: #fff; }
+
+.menu-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+#Full_menu {
+    flex: 1;
+    text-align: left;
+}
+
+#Full_menu h4 {
+    font-size: 48px;
+    line-height: 1.2;
+    color: #111;
+}
+
+#Appetizer {
+    flex: 1.5;
+    background-color: #faf5f0;
+    padding: 60px;
+}
+
+#Appetizer h3 {
+    font-size: 24px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.menu_item {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.menu_subitem {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.reserva { padding: 100px 0; background-color: #fff; }
+
+.reserva-wrapper {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.form-box {
+    flex: 1.2;
+    background: #f5f3f0;
+    padding: 40px;
+}
+
+.form-box form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.full-width, textarea, button { grid-column: span 2; }
+
+.form-box input, .form-box select, .form-box textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.row { display: flex; gap: 10px; grid-column: span 2; }
+
+textarea { height: 100px; resize: none; }
+
+button {
+    background: #111;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+button:hover { background: #ad9966; }
+
+.texto { flex: 1; }
+
+.texto h2 { font-size: 32px; letter-spacing: 4px; margin-bottom: 20px; }
+
+.texto p { color: #666; line-height: 1.6; }
+
+.side-btn img {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    z-index: 100;
+}
+
+#esquerda img { left: 0; }
+#direita img { right: 0; }
+
+
+@media (max-width: 768px) {
+    .menu-wrapper, .reserva-wrapper {
+        flex-direction: column;
+    }
+    header ul { gap: 10px; flex-wrap: wrap; }
+    .overlay h1 { font-size: 40px; }
+}
+
+.footer {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #ccc;
+  padding: 60px 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col {
+  width: 18%;
+  min-width: 150px;
+}
+
+.col h3 {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.col p {
+  font-size: 13px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.col p:hover {
+  color: #fff;
+}
+
+/* Newsletter */
+.newsletter p {
+  margin-bottom: 10px;
+}
+
+.input-box {
+  display: flex;
+  border: 1px solid #555;
+}
+
+.input-box input {
+  padding: 8px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  flex: 1;
+}
+
+.input-box button {
+  background: #d4a94c;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: white;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #aaa;
+}
+.chef-section {
+    display: flex;
+    flex-wrap: wrap; 
+    min-height: 80vh; 
+    background-color: #fff;
+}
+
+.chef-content {
+    flex: 1;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 60px;
+    min-width: 350px;
+}
+
+.text-wrapper {
+    max-width: 450px; 
+}
+
+.chef-title {
+    font-family: 'Serif', Georgia, serif;
+    font-size: 3rem;
+    letter-spacing: 4px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.chef-text {
+    font-family: Arial, sans-serif;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.signature {
+    max-width: 200px;
+    opacity: 0.8;
+}
+
+.chef-image {
+    flex: 1;
+    min-width: 350px;
+    background-image: url('chefs-quotes.jpg');
+    background-size: cover; 
+    background-position: center; 
+    min-height: 400px; 
+}
+
+/* Ajuste para Celulares */
+@media (max-width: 768px) {
+    .chef-section {
+        flex-direction: column-reverse; 
+    }
+    .chef-content {
+        padding: 40px 20px;
+    }
+}
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; 
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 500px; 
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.overlay-card {
+    background-color: rgba(255, 255, 255, 0.85); 
+    padding: 40px 60px;
+    text-align: center;
+    max-width: 80%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.overlay-card h3 {
+    font-family: 'Serif', Georgia, serif;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.overlay-card hr {
+    width: 50px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 15px auto;
+}
+
+.overlay-card p {
+    font-family: Arial, sans-serif;
+    color: #444;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.overlay-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px 40px; /* Diminuí um pouco o enchimento interno */
+    text-align: center;
+    width: 60%;  
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+.carousel-container {
+    width: 100%;
+    height: 400px;    
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+}
